@@ -8,7 +8,7 @@ The "Find Backup" selection takes you to your backup directory consistent with t
 
 The "Versions" selection is valid if versioning is turned on in SyncBack and versioning folders ($SBV folders) are present in each download directory (rather than having one version folder).  So a backup folder may look like this:
 
-![2025-12-30-16-33-12-image.png](Images\2025-12-30-16-33-12-image.png)
+![2025-12-30-16-33-12-image.png](Images/2025-12-30-16-33-12-image.png)
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ If you have versions turned on with SyncBack, this will launch a GUI that simpli
 
 So, right-clicking on a file might take you to a screen that looks like this:
 
-![2025-12-30-16-55-11-image.png](Images\2025-12-30-16-55-11-image.png)
+![2025-12-30-16-55-11-image.png](Images/2025-12-30-16-55-11-image.png)
 
 This is a list of all versions that SyncBack made of the given input file in descending order of modification date.  Other dates are provided for reference as is the file name of the backup or version.  Just click on a row and push "Restore This Version" and you will be presented with a "Save" dialog that defaults to the desktop.  Once the file is restored, you are free to replace or restore the source file.
 
