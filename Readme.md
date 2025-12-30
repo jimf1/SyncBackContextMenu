@@ -2,7 +2,7 @@
 
 This application is an add on to SyncBack Pro to aid in the location and restoration of backups made with SyncBack Pro on Windows PCs.  To this end, 2 context (right click) entries are made in Windows Explorer called Find Backup and Versions.
 
-![2025-12-30-16-28-12-image.png](Images\2025-12-30-16-28-12-image.png)
+![2025-12-30-16-28-12-image.png](Images/2025-12-30-16-28-12-image.png)
 
 The "Find Backup" selection takes you to your backup directory consistent with the folder structure setup intitially.  This selection is valid for selected files and folders.
 
