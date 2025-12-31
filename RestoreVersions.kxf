@@ -36,13 +36,13 @@
 				<property name="Left" vt="Int8">23</property>
 				<property name="Top" vt="Int8">72</property>
 				<property name="Width" vt="Int16">449</property>
-				<property name="Height" vt="Int16">210</property>
+				<property name="Height" vt="Int16">206</property>
 				<property name="Font.Charset" vt="Ident">ANSI_CHARSET</property>
 				<property name="Font.Color" vt="Ident">clBlack</property>
-				<property name="Font.Height" vt="Int8">-13</property>
-				<property name="Font.Name" vt="String">Segoe UI Variable Display</property>
-				<property name="Font.Style" vt="Set"/>
-				<property name="ItemHeight" vt="Int8">17</property>
+				<property name="Font.Height" vt="Int8">-15</property>
+				<property name="Font.Name" vt="String">Segoe UI Semibold</property>
+				<property name="Font.Style" vt="Set">fsBold</property>
+				<property name="ItemHeight" vt="Int8">20</property>
 				<property name="Items.Strings" vt="List">
 					<list>
 						<li vt="String"/>
@@ -103,7 +103,7 @@
 			<properties>
 				<property name="Left" vt="Int8">23</property>
 				<property name="Top" vt="Int8">40</property>
-				<property name="Width" vt="Int8">112</property>
+				<property name="Width" vt="Int16">448</property>
 				<property name="Height" vt="Int8">20</property>
 				<property name="AutoSize" vt="False">False</property>
 				<property name="Caption" vt="String">Choose a version:</property>

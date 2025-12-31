@@ -31,18 +31,23 @@ _GUICtrlListView_SetColumnWidth($FileList, 1, 150)				; **** Added
 _GUICtrlListView_SetColumnWidth($FileList, 2, 150)				; **** Added
 _GUICtrlListView_SetColumnWidth($FileList, 3, 800)				; **** Added
 _GUICtrlListView_SetColumnWidth($FileList, 4, 0)				; **** Added
+;Alternate some colors											; **** Added
+; Set the background color for the main ListView control (odd rows)
+GUICtrlSetBkColor($FileList, 0xE5F4D4) ; Really light green		; **** Changed
+; Enable the alternate coloring flag							; **** Added
+GUICtrlSetBkColor($FileList, $GUI_BKCOLOR_LV_ALTERNATE)			; **** Added
 
 GUICtrlSetData(-1, "")
-GUICtrlSetFont(-1, 10, 400, 0, "Segoe UI Variable Display")
+GUICtrlSetFont(-1, 11, 400, 0, "Segoe UI Semibold")
 GUICtrlSetColor(-1, 0x000000)
 $bSelect = GUICtrlCreateButton("Restore This Version", 528, 304, 147, 25)
 GUICtrlSetFont(-1, 10, 800, 0, "Segoe UI Variable Display")
-$sLabelMsg = $sInFileName & " Versions"                       	; **** Added
+$sLabelMsg = "Versions of: " & $sInFileName                     ; **** Added
 $Label1 = GUICtrlCreateLabel($sLabelMsg, 23, 8, 1145, 24)    	; **** Changed
 GUICtrlSetFont(-1, 12, 800, 0, "Segoe UI Variable Text")
 GUICtrlSetColor(-1, 0x0C3500)
-$Label2 = GUICtrlCreateLabel("Choose a version:", 23, 40, 112, 20)
-GUICtrlSetFont(-1, 10, 400, 0, "Segoe UI Variable Display")
+$Label2 = GUICtrlCreateLabel("Choose a version to restore", 23, 40, 448, 20)
+GUICtrlSetFont(-1, 12, 400, 0, "Segoe UI Variable Display")
 GUISetState(@SW_SHOW)
 #EndRegion ### END Koda GUI section ###
 
@@ -51,7 +56,10 @@ Func InsertListViewItem ($sFilePath)
 	$dates = getFileTimes($sFilePath)  ; Get an array of dates for the file
 	$sColsDelimited = $dates[1] & "|" & $dates[0] & "|" & $dates[2] & "|" & $sFilePath & "|" & $dates[4]
 	$listState = GUICtrlCreateListViewItem($sColsDelimited, $FileList)
+	GUICtrlSetBkColor(-1, 0xBCE292) ; Light (but darker) green
 EndFunc
+
+#BCE292
 
 
 ;~ Get files avaiable to version and populate list view
