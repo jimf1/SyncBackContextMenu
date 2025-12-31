@@ -59,9 +59,6 @@ Func InsertListViewItem ($sFilePath)
 	GUICtrlSetBkColor(-1, 0xBCE292) ; Light (but darker) green
 EndFunc
 
-#BCE292
-
-
 ;~ Get files avaiable to version and populate list view
 ; First, get the file that was passed in originally
 InsertListViewItem($mirror)
